@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MovieFriend</title>
+    <link rel="stylesheet" href="/css/StyleIndex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> MovieFriend </div>
+        <div class="nav">
+            <form class="textfild">
+                <input class="textFildSearch" name="Search" type="text" required placeholder="Искать">
+                <a class="nav__link" asp-area="" asp-page="">Поиск</a>
+                <a class="nav__link" asp-area="" asp-controller="Authorization" asp-action="Login">Вход</a>
+                <a class="nav__link" asp-area="" asp-controller="Authorization" asp-action="Registration">Регистрация</a>
+            </form>
+        </div>
+    </div>
+    <div class="firststring">
+        <a class="first__link" asp-area="" asp-controller="Film" asp-action="AddMovie">Добавить фильм</a>
+        <a class="first__link" asp-area="" asp-controller="Film" asp-action="AddSeries">Добавить сериал</a>
+        <a class="first__link" asp-area="" asp-page="">Мои добавленые фильмы</a>
+        <a class="first__link" asp-area="" asp-controller="Film" asp-action="FilmList">Фильмы</a>
+        <a class="first__link" asp-area="" asp-controller="Film" asp-action="SeriesList">Сериалы</a>
+        <a class="first__link" asp-area="" asp-page="">Топ 100</a>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

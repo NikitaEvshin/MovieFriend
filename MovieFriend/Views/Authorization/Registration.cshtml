@@ -1,0 +1,24 @@
+﻿@model CreateNewUser
+@{
+
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<body>
+    <h1 class="register"> Регистрация на MovieFriend</h1>
+    @using (Html.BeginForm("SendRegisterForm", "Authorization", FormMethod.Post))
+    {
+<div class="textfild">
+    @Html.TextBoxFor(m => m.Email, new {placeholder = "Email", @class = "textFildEmail" })
+    <p> </p>
+    @Html.TextBoxFor(m => m.Login, new {placeholder = "Введите логин", @class = "textFildLogin" })
+    <p> </p>
+    @Html.TextBoxFor(m => m.Password, new {placeholder = "Ведите пароль", @class = "textFildPassword" })
+</div>
+        <p> </p>
+        <p class="btnRegister">
+            <button class="registerbutton">Зарегистрироваться</button>
+        </p>
+            }
+</body>

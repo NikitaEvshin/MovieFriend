@@ -1,0 +1,24 @@
+﻿@model AuthorizationUser
+@{
+
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<body>
+    <h1 class="register"> Авторизация на MovieFriend</h1>
+    @using (Html.BeginForm("LoginAuthorization", "Authorization", FormMethod.Post))
+    {
+        <div class="textfild">
+            <p> </p>
+            @Html.TextBoxFor(m => m.Login, new { placeholder = "Введите логин", @class = "textFildLogin" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Password, new { placeholder = "Ведите пароль", @class = "textFildPassword" })
+        </div>
+        <p> </p>
+        <p class="btnRegister">
+            <button class="registerbutton">Авторизоваться</button>
+        </p>
+    }
+</body>
+

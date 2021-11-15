@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "FilmList Page";
+    Layout = "_Layout";
+
+}
+<a>
+    @foreach (Film i in Model)
+    {
+    <div class="description">
+        <p class="called">@i.Called</p>
+        <p class="logoFilms">
+            <img align="middle" width="250" height="250" src="@i.Images" alt="Logofilm">Обзор: @i.Description
+        </p>
+        <p class="trailer">
+            <iframe align="middle" width="300" height="200" src="@i.Trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>Рецензия: @i.Reviews. Автор: @i.NameAuthor
+        </p>
+    </div>
+    }
+</a>
+
+

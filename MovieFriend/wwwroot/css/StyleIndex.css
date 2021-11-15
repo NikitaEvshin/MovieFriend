@@ -1,0 +1,141 @@
+.body{
+    background-color: cornsilk;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    position: top;
+    margin-left: 0px;
+    margin-right: 0px;
+height: 100px;
+    z-index: 1200;
+    background-color: black;
+    color:rgb(248, 246, 242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.logo{
+    font-size: 60px;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 50px;
+}
+.nav{
+margin: 20px;
+word-spacing: 30px;
+text-transform: uppercase;
+transition: color 0.5s;
+}
+.nav__link:hover{
+color: rgb(194, 19, 19);
+}
+.two{
+word-spacing: 3px;
+}
+
+.first__link{
+    margin: 10px;
+    word-spacing: 30px;
+    text-transform: uppercase;
+    transition: color 0.2s;  
+    word-spacing: 3px;
+    color: black; 
+    text-decoration: none;
+}
+.firststring{
+    word-spacing: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+color: antiquewhite;
+}
+.first__link:hover{
+    color: gray;
+}
+.nav__link{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* Регистрация */
+
+.register{
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    .textfild{
+        text-align: center;
+        margin-top: 20px; 
+    }
+    .textFildEmail{
+        width: 270px;
+        height: 35px; 
+        border-radius: 30px;
+        text-align: center;
+        }
+    .textFildLogin{
+    width: 270px;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 10px;
+    text-align: center;
+    }
+    .textFildPassword{
+        width: 270px;
+        height: 35px; 
+        border-radius: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .btnRegister{
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 30px; 
+        color: white;
+        border: black;
+    }
+    .registerbutton{
+        width: 140px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    
+      .registerbutton:hover {
+        color: white;
+        background: #333;
+        -webkit-transition: all .3s linear;
+      }
+      .textFildSearch{
+        width: 270px;
+        height: 35px;
+        border-radius: 30px;
+        }
+
+        /* Список фильмов */
+
+        .called{
+            font-size: 65px;
+            font-weight: 900px;
+            margin-bottom: 1px;
+        }
+        .description{
+            margin-left: 10px;
+            margin-top: 3px;
+            background: rgba(0,0,0,.3);
+            font-size: 18px;
+            scroll-margin-left: 5px;
+        }
+        .trailer{
+            justify-content: center;
+            align-items: center;
+        }

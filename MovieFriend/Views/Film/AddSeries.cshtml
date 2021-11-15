@@ -1,0 +1,31 @@
+﻿@model AddMovie
+@{
+
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<body>
+    <h1 class="register"> Добавление cериала</h1>
+    @using (Html.BeginForm("AddSeries", "Film", FormMethod.Post))
+    {
+        <div class="textfild">
+            @Html.TextBoxFor(m => m.Called, new { placeholder = "Введите название сериала", @class = "textFildEmail" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Images, new { placeholder = "Добавьте ссылку на картинку", @class = "textFildLogin" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Trailer, new { placeholder = "Добавьте ссылку на трейлер", @class = "textFildPassword" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Description, new { placeholder = "Введите описание сериала", @class = "textFildPassword" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Reviews, new { placeholder = "Введите отзыв", @class = "textFildPassword" })
+            <p> </p>
+            @Html.TextBoxFor(m => m.Rating, new { placeholder = "Введите рейтинг", @class = "textFildPassword" })
+            <p> </p>
+        </div>
+        <p> </p>
+        <p class="btnRegister">
+            <button class="registerbutton">Добавить сериал</button>
+        </p>
+    }
+</body>
